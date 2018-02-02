@@ -23,12 +23,16 @@ a {
 }
 
 .containerr {
-  padding: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-right: 300px;
+  padding-left: 300px;
   display: flex;
 }
 .containerr > div {
   flex: 1; /*grow*/
   text-align: center;
+  padding: 10px;
 }
 
 h1,
