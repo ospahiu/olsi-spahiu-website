@@ -1,17 +1,13 @@
 body {
+  -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+  zoom: 0.8; /* Other non-webkit browsers */
+  zoom: 80%; /* Webkit browsers */
   font-family: "Source Sans Pro", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 20px;
-  background-color: #1D1D1D;
-  background-image: linear-gradient(30deg, #262636 12%, transparent 12.5%, transparent 87%, #262636 87.5%, #262636),
-  linear-gradient(150deg, #262636 12%, transparent 12.5%, transparent 87%, #262636 87.5%, #262636),
-  linear-gradient(30deg, #262636 12%, transparent 12.5%, transparent 87%, #262636 87.5%, #262636),
-  linear-gradient(150deg, #262636 12%, transparent 12.5%, transparent 87%, #262636 87.5%, #262636),
-  linear-gradient(60deg, #39394a 25%, transparent 25.5%, transparent 75%, #39394a 75%, #39394a),
-  linear-gradient(60deg, #39394a 25%, transparent 25.5%, transparent 75%, #39394a 75%, #39394a);
-  background-size:80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  background-color: #272727;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23585758' fill-opacity='0.52'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 p {
@@ -24,7 +20,7 @@ a {
 
 .containerr {
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 0px;
   padding-right: 300px;
   padding-left: 300px;
   display: flex;
@@ -67,7 +63,8 @@ div.small-container {
 }
 
 div.container {
-  max-width: 940px;
+  max-width: 1000px;
+  background-size: cover;
 }
 
 div.small-container {
