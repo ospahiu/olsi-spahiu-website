@@ -38,16 +38,17 @@ h2 {
 }
 
 h1 {
-  font-weight: normal;
+  font-size: 6.5em;
+  text-align: center;
 }
 
 h2 {
-  font-size: 130px;
+  font-size: 2.0em;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 15px 0;
 }
 
@@ -90,7 +91,7 @@ footer {
 
 section.hero {
   color: #fff;
-  background-image: url('/images/keyboard.jpg');
+  background-image: url('/images/speaking.jpg');
   background-size: cover;
   height: 300px;
 }
