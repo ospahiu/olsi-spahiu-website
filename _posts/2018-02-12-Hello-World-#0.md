@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-category: personal
+category: finance
 ---        
 I've always had strong interests in topics. I've always dived deep into subject matter that I find interesting, that captivates me in some way. I've loved and continue to love the process of learning about something or a group of topics and coming out the other side with competence, or at the very least *slightly more* competence. It is almost like venturing into the unknown, seeking something, finding it and confronting it, then returning with the spoils a better and more complete person.
 
@@ -31,9 +31,10 @@ I am aiming high when it comes to engagment with my website and personal brand. 
 
 I need more eyes on my work as I find people will be extremely quick to point out the flaws in your ideas and opinions. Listening carefully to those criticisms is key in being able to determine whether or not your ideas and work really do need some refining or refactoring. I'd also like to share some proffessional experiences in this blog whether it be my internships, my living in different cities, and in which ways the companies I've worked for differ.
 
-
+```java
+private String getHelloWorld() {
+    System.out.println("Hello World!");
+}
 ```
-Hello World
-```
-
-Cheers, Olsi - *Friday, Febuary 9th, 2018*
+----------------------
+### Cheers, Olsi

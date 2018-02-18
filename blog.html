@@ -2,31 +2,31 @@
 layout: default
 title: Blog
 ---
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather|Roboto' rel='stylesheet'>
-  </head>
-  <body>
-  <div class="container">
-    <h2 class="spacing">Blog</h2>
-    <div class="blog-posts">
-      {% for post in site.posts %}
-      <div class="blog-post spacing">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="summary">
-          <span class="label label-primary">{{ post.category }}</span>
-          <span class="date">
-            {{ post.date | date: '%B %d, %Y' }}
-          </span>
-        </p>
-        <i>{{ post.excerpt }}...</i>
-      </div>
-      {% endfor %}
+<div class="container">
+  <h1 class="main-name">Blog</h1>
+  <div class="blog-posts">
+    {% for post in site.posts %}
+    <div class="blog-post spacing">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="summary">
+        {% if post.category == "personal" %}
+        <span class="label label-primary">{{ post.category }}</span>
+        {% elsif post.category == "self-improvement" %}
+        <span class="label label-info">{{ post.category }}</span>
+        {% elsif post.category == "finance" %}
+        <span class="label label-success">{{ post.category }}</span>
+        {% elsif post.category == "warning" %}
+        <span class="label label-primary">{{ post.category }}</span>
+        {% else %}
+        <span class="label label-default">{{ post.category }}</span>
+        {% endif %}
+        <span class="date">
+          {{ post.date | date: '%B %d, %Y' }}
+        </span>
+      </p>
+      <i>{{ post.excerpt }}...</i>
     </div>
+    {% endfor %}
   </div>
-  </body>
+</div>
+{% include footer.html %}
