@@ -46,12 +46,21 @@ h1.main-name {
   padding: 10px;
 }
 
+h1.post-title {
+  font-family: 'Source Sans Pro';
+  font-size: 4.0em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+}
+
 h2 {
   font-family: 'Source Sans Pro';
   font-size: 2.0em;
   font-weight: bold;
-  text-align: center;
-  padding: 10px;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -189,7 +198,13 @@ p.sub-text {
 }
 
 .spacing {
-  padding: 50px 0;
+  padding: 30px 0;
+}
+
+.spacing-about {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
 }
 
 .column {
