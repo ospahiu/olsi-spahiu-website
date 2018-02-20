@@ -27,7 +27,7 @@ I am aiming high when it comes to engagment with my website and personal brand. 
 
 > A critic is your best friend
 
-### Placeholder subtitle
+### 
 
 I need more eyes on my work as I find people will be extremely quick to point out the flaws in your ideas and opinions. Listening carefully to those criticisms is key in being able to determine whether or not your ideas and work really do need some refining or refactoring. I'd also like to share some proffessional experiences in this blog whether it be my internships, my living in different cities, and in which ways the companies I've worked for differ.
 
