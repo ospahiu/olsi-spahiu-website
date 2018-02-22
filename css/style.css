@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-size: 20px;
   background-color: #272727;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23585758' fill-opacity='0.52'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+
 
 }
 
@@ -25,12 +25,32 @@ a {
   padding-right: 300px;
   padding-left: 300px;
   display: flex;
+  flex-direction: row;
 }
+
+
+
 .containerr > div {
   flex: 1; /*grow*/
   text-align: center;
   padding: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .containerr {
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 2em;
+  }
+
+  h1.main-name {
+    font-size: 2em;
+  }
+}
+
 
 h1,
 h2 {
@@ -40,7 +60,7 @@ h2 {
 
 h1.main-name {
   font-family: 'Source Sans Pro';
-  font-size: 6.0em;
+  font-size: 10.0vh;
   font-weight: bold;
   text-align: center;
   padding: 10px;
@@ -108,9 +128,14 @@ footer {
 
 section.hero {
   color: #fff;
-  background-image: url('/images/speaking.jpg');
+  background: url('/images/speaking.jpg') no-repeat right top;
   background-size: cover;
+
   max-height: 600px;
+  /*object-fit: cover;*/
+  /*display: flex;*/
+  /*display:inline-block;*/
+  /*float: right;*/
 }
 
 section.about-me {
@@ -118,7 +143,7 @@ section.about-me {
   background-image: url('/images/olsi_full_shot.jpg');
   background-size: cover;
   background-size: 100%;
-  height: 1100px;
+  max-height: 1100px;
 }
 
 p.post-hero {
@@ -230,6 +255,7 @@ p.sub-text {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
 }
 
 .blog-post .date {
